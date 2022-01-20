@@ -1,0 +1,17 @@
+
+<%- include('partials/header.ejs'); -%>
+<h1>Compose</h1>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">">
+
+
+<form action="/compose" method="post"> 
+    <label for="">title</label>
+    <div class="form-group">  <textarea name="postTitle" id="" cols="180" rows="2"></textarea></div>
+  
+    <label for="">post</label>
+    <div class="form-group"><textarea name="postBody" id="" cols="180" rows="5"></textarea></div>
+  
+    <button class="btn btn-primary" type="submit">publish</button>
+</form>
+<%- include('partials/footer.ejs'); -%>
+
